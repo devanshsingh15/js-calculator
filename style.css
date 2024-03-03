@@ -1,0 +1,36 @@
+body{
+  background-color: black;
+}
+.btn{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #393939;
+  border: none;
+  color: white;
+  font-size: 25px;
+}
+.clr-btn{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #393939;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+.op-btn{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #feb007;
+  border: none;
+  color: white;
+  font-size: 25px;
+}
+.calculation {
+  color: white;
+  font-size: 45px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}

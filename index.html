@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <p class="calculation js-calculation"></p>
+
+  <p>
+    <button onclick="
+    updateCalculation('1');
+    " class="btn">1</button>
+
+    <button onclick="
+    updateCalculation('2');
+    " class="btn">2</button>
+    
+    <button onclick="
+    updateCalculation('3');
+    " class="btn">3</button>
+    
+    <button onclick="
+    updateCalculation('+');
+    " class="op-btn">+</button>
+  </p>
+  <p>
+    <button onclick="
+    updateCalculation('4');
+    " class="btn">4</button>
+
+    <button onclick="
+    updateCalculation('5');
+    " class="btn">5</button>
+    
+    <button onclick="
+    updateCalculation('6');
+    " class="btn">6</button>
+
+    <button onclick="
+      updateCalculation('-');
+    " class="op-btn">-</button>
+  </p>
+  <p>
+    <button onclick="
+      updateCalculation('7');
+    " class="btn">7</button>
+
+    <button onclick="
+      updateCalculation('8');
+    " class="btn">8</button>
+    
+    <button onclick="
+      updateCalculation('9');
+    " class="btn">9</button>
+
+    <button onclick="
+      updateCalculation('*');
+    " class="op-btn">*</button>
+  </p>
+  <p>
+    <button onclick="
+      updateCalculation('0');
+    " class="btn">0</button>
+
+    <button onclick="
+      updateCalculation('.');
+    " class="btn">.</button>
+    
+    <button onclick="
+    calculation=eval(calculation);
+    displayCalculation();
+    localStorage.setItem('calculation',calculation);
+    " class="btn">=</button>
+
+    <button onclick="
+      updateCalculation('/');
+    " class="op-btn">/</button>
+  </p>
+  <p>
+    <button onclick="
+    calculation='';
+    displayCalculation();
+    localStorage.setItem('calculation',calculation);
+    " class="clr-btn">Clear</button>
+  </p>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
